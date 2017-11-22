@@ -1,5 +1,5 @@
 angular
-	.module('datePicker', [])
+	.module('datePicker.directive', [])
 	.directive('datePicker', datePicker);
 
 datePicker.$inject = [];
