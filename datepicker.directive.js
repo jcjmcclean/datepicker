@@ -17,25 +17,26 @@ function datePicker() {
 		},
 		link: link,
 		template: ''+
-			'<span'+
-				'moment-picker="ngModel"'+
-				'locale="en-gb"'+
-				'min-view="year"'+
-				'max-view="{{ maxView || \'month\' }}"'+
-				'today="true"'+
-				'start-view="year"'+
-				'class="moment-picker-input"'+
-				'format="{{ momentFormat || \'L\' }}"'+
-				'autoclose="true"'+
-				'min-date="minDate"'+
+			'<span '+
+				'moment-picker="ngModel" '+
+				'locale="en-gb" '+
+				'min-view="year" '+
+				'max-view="{{ maxView || \'month\' }}" '+
+				'today="true" '+
+				'start-view="year" '+
+				'class="moment-picker-input" '+
+				'format="{{ momentFormat || \'L\' }}" '+
+				'autoclose="true" '+
+				'min-date="minDate" '+
 			'>'+
-				'<input'+
-					'readonly'+
-					'type="text"'+
-					'ng-model="ngModel"'+
-					'placeholder="{{ placeholder }}"'+
-					'ng-required="required"'+
-					'ng-model-options="{ updateOn: \'blur\' }"'+
+				'<input '+
+					'readonly '+
+					'type="text" '+
+					'ng-model="ngModel" '+
+					'name="ngModel" '+
+					'placeholder="{{ placeholder }}" '+
+					'ng-required="required" '+
+					'ng-model-options="{ updateOn: \'blur\' }" '+
 				'>'+
 			'</span>'
 	};
